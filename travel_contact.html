@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Contact TravelBloom</title>
+        <link rel="stylesheet" href="./travel_recommendation.css">
+    </head>
+    <body>
+        <nav><h2>TravelBloom</h2>
+            <ul>
+              <li><a href="./travel_recommendation.html" id="home">Home </a></li>
+              <li><a href="./travel_about.html" id="about">About Us </a></li>
+              <li><a href="./travel_contact.html" id="contact">Contact Us</a></li>
+            </ul>
+        </nav>
+        <h1>Contact Us</h1>
+        <h4>Get in touch</h4>
+        <form id="contactForm">
+            <div>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Enter your message" required></textarea>
+            </div>
+            <button type="submit" onclick="thankyou()">Submit</button>
+        </form>
+
+        <a href="discord.gg" id="discord_social">Discord </a>
+        <a href="x.com" id="x_social">X/Twitter </a>
+    </body>
+</html>
