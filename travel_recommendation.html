@@ -13,15 +13,19 @@
               <li><a href="./travel_contact.html" id="contact">Contact Us </a></li>
               <li><input type="text" id="destinationInput" placeholder="Enter a destination or keyword">  </li>
               <li><button id='btnSearch'>Search </button></li>
-              <li><button id='btnClear'>Clear</button></li>
+              <li><button id='btnClear' onclick="clearSearch()">Clear</button></li>
             </ul>
         </nav>
         <h1>Explore Dream Destination</h1>
-        <h3>
+        <p>
             It encourages exploration of unfamiliar territories, embracing diverse cultures and landscapes, while pursuing the desired destination that captivates the heart and ignites a sense of wonder.
-        </h3>
+        </p>
         <button id='btnBooking'>Book Now</button>
         <a href="discord.gg" id="discord_social">Discord </a>
         <a href="x.com" id="x_social">X/Twitter </a>
+        <div class="searchDestination">
+            <div id="result"></div>
+        </div>
+        <script src="./travel_recommendation.js"></script>
     </body>
 </html>
