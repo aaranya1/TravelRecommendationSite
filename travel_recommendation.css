@@ -1,0 +1,247 @@
+/* ---------- Global Reset & Base Styles ---------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background: #f9fafb;
+    color: #333;
+    padding-top: 80px; /* space for fixed nav */
+}
+
+h1, h2, h3 {
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #1d3557;
+}
+
+h4 {
+    font-weight: 400;
+    margin-bottom: 1rem;
+    color: #1d3557;
+}
+
+p {
+    margin-bottom: 1.2rem;
+    max-width: 800px;
+}
+
+/* ---------- Navigation Bar ---------- */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #1d3557;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 2rem;
+    z-index: 1000;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+nav h2 {
+    font-size: 1.25rem;
+    color: #f1faee;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    color: #f1faee;
+    text-decoration: none;
+    padding: 0.4rem 0.8rem;
+    transition: background 0.3s ease;
+    border-radius: 4px;
+}
+
+nav a:hover,
+nav a:focus {
+    background: #457b9d;
+}
+
+nav input[type="text"] {
+    padding: 0.4rem 0.6rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+nav button {
+    background: #e63946;
+    color: #fff;
+    border: none;
+    padding: 0.45rem 0.9rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+nav button:hover {
+    background: #d62839;
+}
+
+/* ---------- Main Page Elements ---------- */
+h1 {
+    text-align: center;
+    margin: 2rem 0 1rem;
+    font-size: 2.5rem;
+}
+
+p {
+    margin: 0 auto 2rem;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+#btnBooking {
+    display: block;
+    margin: 0 auto 2rem;
+    background: #e63946;
+    color: #fff;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background 0.3s ease;
+}
+
+#btnBooking:hover {
+    background: #d62839;
+}
+
+/* Social links */
+#discord_social, #x_social {
+    margin: 0 0.5rem;
+    color: #1d3557;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+#discord_social:hover, #x_social:hover {
+    color: #457b9d;
+}
+
+/* ---------- Search Results ---------- */
+.searchDestination {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.destination-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    width: 260px;
+    padding: 1rem;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.destination-card:hover {
+    transform: translateY(-5px);
+}
+
+.destination-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 0.8rem;
+}
+
+.destination-card h3 {
+    color: #1d3557;
+    margin-bottom: 0.5rem;
+}
+
+/* ---------- Contact Form ---------- */
+form#contactForm {
+    max-width: 600px;
+    margin: 2rem auto;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+form#contactForm div {
+    margin-bottom: 1.2rem;
+}
+
+form#contactForm label {
+    display: block;
+    margin-bottom: 0.4rem;
+    font-weight: 500;
+    color: #1d3557;
+}
+
+form#contactForm input,
+form#contactForm textarea {
+    width: 100%;
+    padding: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    outline: none;
+}
+
+form#contactForm input:focus,
+form#contactForm textarea:focus {
+    border-color: #457b9d;
+}
+
+form#contactForm button[type="submit"] {
+    background: #e63946;
+    color: #fff;
+    border: none;
+    padding: 0.7rem 1.4rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+}
+
+form#contactForm button[type="submit"]:hover {
+    background: #d62839;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    nav ul {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    .destination-card {
+        width: 90%;
+    }
+}
